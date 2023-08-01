@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+   
+
+    <div class="container py-5 shadow-lg w-75 border border-primary rounded-3 ">
+        <h1 class="mb-5">Product management system</h1>
+       <div class="from-groub mb-3">
+        <label for="ProductName">ProductName:</label>
+        <input type="text" class="form-control mb-4" id="ProductName">
+
+       </div>
+
+       <div class="from-groub mb-3">
+        
+        <label for="ProductPrice">ProductPrice:</label>
+        <input type="number" class="form-control mb-4" id="ProductPrice">
+       </div>
+       <div class="from-groub mb-3">
+        <label for="ProductCategory">ProductCategory:</label>
+        <input type="text" class="form-control mb-4" id="ProductCategory">
+       </div>
+
+       <div class="from-groub mb-3">
+        <label for="ProductDesc" >ProductDesc:</label>
+        <textarea  id="ProductDesc" class="form-control mb-4"  cols="30" rows="10"></textarea>
+
+       </div>
+
+
+
+        <button id="addBtn" onclick="addProduct();" class="btn btn-outline-primary btn-large mb-3 p-3 fw-bolder fs-5 d-block">Add Product</button>
+        <button id="updateBtn" onclick="updateInput()" class="btn btn-outline-danger btn-large p-3 fw-bolder mb-3 fs-5 d-none">Update Product</button>
+
+
+    </div>
+
+    <div class="w-75 mx-auto py- 5 mt-5  text-center text-capitalize">
+        <input type="text" oninput="searchProduct(this.value)" id="inputSearch"  class="form-control mb-4 w-50 p-2 " id="search" placeholder="search" >
+        <table class="table table-dark table-striped table-hover table-bordered border-primary">
+            <thead>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Desc</th>
+                <th>Update</th>
+                <th>delete</th>
+            </thead>
+
+            <tbody id="tableBody">
+               
+            </tbody>
+
+        </table>
+
+    </div> 
+
+
+  <div class="container">
+    <div class="row py-5" id="test">
+      
+    </div>
+  </div>  
+
+
+<link rel="stylesheet" href="CSS/bootstrap.bundle.min.js">
+    <script src="index.js"></script> 
+</body>
+</html>
